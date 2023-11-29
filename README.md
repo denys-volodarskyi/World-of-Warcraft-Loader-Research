@@ -77,7 +77,7 @@ It is the second address inserted into the TLS callback array in the previous st
 
 It sets step ``I`` and calls a function to map the executable image with 2 arguments: module base and reason.
 
-It is the biggest step and it’s executed If the reason is ``DLL_PROCESS_ATTACH``.
+It is the biggest step and itâ€™s executed If the reason is ``DLL_PROCESS_ATTACH``.
 
 #### Relocations overlapping page boundaries
 Creates a table of some (probably invalid) relocations (overlapping page boundaries) with address and pointer size.
@@ -93,7 +93,7 @@ See [Installing Vectored Exception Handler](#installing-vectored-exception-handl
 Decrypts a structure containing the hash of some module name.
 If this module is found in the process, the loader will exit.
 
-Currently it’s not known what module it tries to avoid.
+Currently itâ€™s not known what module it tries to avoid.
 
 #### Layout Structure
 
@@ -158,7 +158,7 @@ Address field can be safely replaced with the real address after decryption.
 Size field has an encrypted address of the real import table. The table, library names, function names and pointers are encrypted and must be read and decrypted in specific order.
 
 
-Address field can be safely set to zero after decryption.
+Size field can be safely set to zero after decryption.
 
 
 The IAT data directory has a valid size but invalid pointer (points to fake IAT).
